@@ -64,16 +64,36 @@ Y= A⊕B
 
 **PROGRAM**
 
-Program for logic gates and verify its truth table in quartus using Verilog programming
+    module Dodla(a,b,c,d,f,h,t,r);
+    input a,b;
+    output c,d,f,h,t,r;
+    assign c = a & b;
+    assign d = a | b;
+    assign f = a ^ b;
+    assign h = ~(a & b);
+    assign t = ~(a | b);
+    assign r = ~(a ^ b);
+    endmodule
 
- Developed by: RegisterNumber: 
- 
+
+Developed by : S Abinav Aaditya
+
 **Logic symbol & Truthtable**
+
+![Screenshot 2024-11-28 194841](https://github.com/user-attachments/assets/300701ef-8d8d-4d70-b58b-54823d61fba3)
+
 
 **RTL realization Output:** 
 
+![Screenshot 2024-11-28 195712](https://github.com/user-attachments/assets/1c701d65-47f6-4877-931c-8b4ced265e53)
+
+
 **RTL**
 
-**Result:**
+![Screenshot 2024-11-28 195053](https://github.com/user-attachments/assets/548107b8-5026-42f9-9aaf-ae9b00ab2713)
 
+
+**Result:**
+The truth table of the specified logic gates (AND, OR, NOT, NAND, NOR, XOR, XNOR)
+was successfully implemented and verified using Verilog programming in Quartus II.
 
